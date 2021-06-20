@@ -40,16 +40,25 @@
     </header>
 
     <div class="top-wrapper">
-        <div class="container">
-
+        <div class="container-top">
+            <div class="content-box">
+                <h1>Halo, Nama Saya Faqih Auliyaur Rohman</h1>
+                <p>Saya adalah Fresh Graduate S1 Teknik Informatika Universitas Negeri Malang.</p>
+                <p>Saya mungkin belum punya banyak pengalaman, tetapi saya suka belajar hal baru di dunia pemrograman
+                    terlebih pada frontend dan backend Web Development.
+                </p>
+                <div class="button-more">
+                    <a class="btn btn-more" href="#">Learn More About Me..</a>
+                </div>
+            </div>
         </div>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(window).on('load', function(){
-            $('#loader').hide();
-        })
+        setTimeout(function(){
+            $("#loader").remove();
+        }, 4000);
     </script>
 </body>
 </html>
