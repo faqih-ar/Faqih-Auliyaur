@@ -227,6 +227,7 @@ a{
 
 .content-box h1:hover{
     text-shadow: 0 0 10px rgb(69, 255, 239);
+    transition: all .5s;
 }
 
 .content-box p{
@@ -259,6 +260,7 @@ a{
 
 .btn:hover{
     box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
+    transition: all .5s;
 }
 
 @keyframes fadebox{
@@ -325,7 +327,7 @@ a{
 }
 
 .image-content:hover{
-    width: 270px;
+    width: 260px;
     transition: all .5s;
 }
 
@@ -345,4 +347,5 @@ a{
 
 .txt-imp:hover{
     text-shadow: 0 0 10px rgb(69, 255, 239);
+    transition: all .5s;
 }
