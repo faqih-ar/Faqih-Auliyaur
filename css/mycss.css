@@ -1,7 +1,7 @@
 body{
     background-color: rgb(14, 24, 65);
     color: rgb(4, 255, 234);
-    font-family: 'Alegreya Sans SC';
+    font-family: 'Oswald', sans-serif;
 }
 
 li{
@@ -125,7 +125,7 @@ a{
 }
 
 .logo-header h1{
-    font-size: 30px;
+    font-size: 25px;
     margin: 5px 15px;
     text-shadow: 0 0 10px rgb(69, 255, 239);
     animation-name: glow;
@@ -133,6 +133,7 @@ a{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate-reverse;
+    letter-spacing: 5px;
 }
 
 .nav-list{
@@ -148,7 +149,8 @@ a{
 
 .nav-list a{
     color: white;
-    font-size: 19px;
+    font-size: 15px;
+    letter-spacing: 4px;
 }
 
 .nav-list span{

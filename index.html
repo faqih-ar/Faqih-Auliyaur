@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/mycss.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Faqih Auliyaur Rohman</title>
-    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="loader-wrapper" id="loader">
@@ -39,17 +39,17 @@
         </div>
     </header>
 
+    <div class="top-wrapper">
+        <div class="container">
+
+        </div>
+    </div>
+
+
     <script>
-        document.onreadystatechange = function(){
-            if(document.readyState!== 'complete'){
-                document.querySelector("body").style.visibility = "hidden";
-                document.querySelector("#loader").style.visibility = "visible";
-            }
-            else{
-                document.querySelector("#loader").style.display = "none";
-                document.querySelector("body").style.visibility = "visible";
-            }
-        }
+        $(window).on('load', function(){
+            $('#loader').hide();
+        })
     </script>
 </body>
 </html>
