@@ -37,8 +37,49 @@
     .btn-more{
         font-size: 12px;
     }
+
+    .line{
+        width: 100px;
+        padding: 0px 0px;
+    }
+
+    .image-content{
+        margin: 0px auto;
+    }
+    
+    .text-content{
+        margin-left: 0px;
+    }
+
+    .text-content p{
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 670px){
-    
+    .row{
+        display: block;
+    }
+
+    .image-content{
+        display: flex;
+        margin: 0 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;    
+    }
+
+    .text-content{
+        margin-top: 40px;
+    }
+
+    .text-content p{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .line{
+        width: 30px;
+        padding: 0px 0px;
+    }
 }

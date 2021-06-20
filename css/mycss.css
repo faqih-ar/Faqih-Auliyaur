@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(14, 24, 65);
+    background-color: rgb(9, 15, 39);
     color: rgb(4, 255, 234);
     font-family: 'Oswald', sans-serif;
 }
@@ -58,7 +58,7 @@ a{
     position: absolute;
     width: 200px;
     height: 200px;
-    border: 5px solid rgb(14, 24, 65);
+    border: 5px solid rgb(9, 15, 39);
     border-radius: 50%;
     border-top: 5px solid yellow;
     border-bottom: 5px solid green;
@@ -72,7 +72,7 @@ a{
     position: absolute;
     width: 250px;
     height: 250px;
-    border: 5px solid rgb(14, 24, 65);
+    border: 5px solid rgb(9, 15, 39);
     border-radius: 50%;
     border-right: 5px solid red;
     border-left: 5px solid black;
@@ -174,6 +174,7 @@ a{
     border-radius: 50%;
     display: inline-block;
     margin: 0px 5px;
+    box-shadow: 0 0 5px rgb(69, 255, 239);
 }
 
 #dropdown{
@@ -194,7 +195,6 @@ a{
 
 .top-wrapper{
     width: 100%;
-    height: 100vh;
 }
 
 .container-top{
@@ -207,7 +207,7 @@ a{
 .content-box{
     width: 95%;
     height: 95%;
-    background-color: rgb(9, 15, 39);
+    background-color: rgb(2, 7, 27);
     border-radius: 25px;
     padding: 100px 150px;
     text-align: center;
@@ -216,13 +216,17 @@ a{
     margin: 70px 0px;
     animation-name: fadebox;
     animation-duration: 1s;
-    animation-delay: 4s;
+    animation-delay: 0s;
 }
 
 .content-box h1{
     font-size: 28px;
     padding: 20px 10px;
     letter-spacing: 2px;
+}
+
+.content-box h1:hover{
+    text-shadow: 0 0 10px rgb(69, 255, 239);
 }
 
 .content-box p{
@@ -258,6 +262,87 @@ a{
 }
 
 @keyframes fadebox{
-    0% {opacity: 0; transform: translateY(10%)};
-    100% {opacity: 1; transform: translateY(0%)};
+    0% {opacity: 0; transform: translateY(10%); -webkit-transform: translateY(10%);};
+    100% {opacity: 1; transform: translateY(0%); -webkit-transform: translateY(0%);};
+}
+
+/* About me */
+
+.wrapper{
+    width: 100%;
+    margin: 0px 0px 100px 0px;
+}
+
+.about-me-title{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+}
+
+.about-me-title h1{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.line{
+    padding: 0px 100px;
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+}
+
+.about-me-content{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.image-content{
+    width: 250px;
+    border-radius: 10px;
+    margin: 0px auto;
+    box-shadow: 0 0 10px rgb(69, 255, 239);
+}
+
+.image-content:hover{
+    width: 270px;
+    transition: all .5s;
+}
+
+.text-content{
+    color: white;
+    margin-left: 90px;
+}
+
+.text-content p{
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.txt-imp{
+    color: rgb(4, 255, 234);
+}
+
+.txt-imp:hover{
+    text-shadow: 0 0 10px rgb(69, 255, 239);
 }

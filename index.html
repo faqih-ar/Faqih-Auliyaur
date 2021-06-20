@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <!--Loader-->
     <div class="loader-wrapper" id="loader">
         <div class="container-loader">
             <div class="First-Box"></div>
@@ -22,8 +23,8 @@
             </div>
         </div>
     </div>
-
-    <header class="header-wrapper">
+    <!--Header-->
+    <header class="header-wrapper" id="header">
         <div class="container">
             <div class="logo-header">
                 <h1>Faqih Auliyaur R</h1>
@@ -38,8 +39,8 @@
             </div>
         </div>
     </header>
-
-    <div class="top-wrapper">
+    <!--Top-Wrapper-->
+    <div class="top-wrapper" id="me">
         <div class="container-top">
             <div class="content-box">
                 <h1>Halo, Nama Saya Faqih Auliyaur Rohman</h1>
@@ -53,11 +54,52 @@
             </div>
         </div>
     </div>
+    <!--About Me-->
+    <div class="wrapper" id="about-me">
+        <div class="container">
+            <div class="about-me-title">
+                <h1>
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    About Me
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </h1>
+            </div>
+            <div class="about-me-content">
+                <div class="row">
+                    <div class="column">
+                        <img class="image-content" src="assets/FOTO.jpg">
+                    </div>
+                    <div class="column">
+                        <div class="text-content">
+                            <p>Halo, nama saya <span class="txt-imp"> Faqih Auliyaur R </span> lahir di kabupaten <span class="txt-imp"> Situbondo, Jawa Timur </span>
+                            pada tanggal <span class="txt-imp">7 Agustus 1997</span>.</p>
+                            <p>Saya adalah lulusan <span class="txt-imp">S1 Teknik Informatika, Universitas Negeri Malang (2016 - 2021)</span> dengan nilai <span class="txt-imp"> IPK 3.72/4.00 </span>.</p>
+                            <p>Saya pribadi menyukai dunia pemrograman, walaupun belum memiliki banyak pengalaman di dalamnya dunia pemrograman menurut saya menyenangkan. Terlebih pada <span class="txt-imp">Web Development</span> server side (backend) ataupun client side (frontend).</p>
+                            <p>Hal lain yang saya sukai yang terkadang saya gunakan untuk mengisi waktu luang adalah <span class="txt-imp">Basket</span>,
+                            <span class="txt-imp"> Video Game</span>, <span class="txt-imp">Membaca Light Novel</span>, <span class="txt-imp"> Membaca Manga</span></p>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         setTimeout(function(){
             $("#loader").remove();
+        }, 4000);
+    </script>
+    <script>
+        $("#header").hide();
+        setTimeout(function(){
+            $("#header").show();
+        }, 4000);
+        $("#me").hide();
+        setTimeout(function(){
+            $("#me").show();
         }, 4000);
     </script>
 </body>
