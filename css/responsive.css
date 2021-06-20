@@ -11,6 +11,32 @@
         animation-name: header-fade;
         animation-duration: 2s;
     }
+
+    .content-box{
+        text-align: left;
+        padding: 50px 30px;
+    }
+
+    .content-box h1{
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+
+    .content-box p{
+        font-size: 15px;
+    }
+
+    .button-more{
+        justify-content: left;
+    }
+
+    .btn{
+        padding: 10px 20px;
+    }
+
+    .btn-more{
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 670px){

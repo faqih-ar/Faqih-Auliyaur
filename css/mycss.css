@@ -209,7 +209,8 @@ a{
     height: 95%;
     background-color: rgb(9, 15, 39);
     border-radius: 25px;
-    padding: 50px 150px;
+    padding: 100px 150px;
+    text-align: center;
     border: 1px solid rgb(44, 197, 224);
     box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
     margin: 70px 0px;
@@ -221,12 +222,10 @@ a{
 .content-box h1{
     font-size: 28px;
     padding: 20px 10px;
-    text-align: center;
     letter-spacing: 2px;
 }
 
 .content-box p{
-    text-align: center;
     color: white;
     letter-spacing: 2px;
     font-size: 18px;
