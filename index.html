@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Faqih Auliyaur Rohman</title>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+</head>
+<body>
+    <div class="loader-wrapper" id="loader">
+        <div class="container-loader">
+            <div class="First-Box"></div>
+            <div class="Second-Box"></div>
+            <div class="Third-Circle"></div>
+            <div class="Forth-Circle"></div>
+            <div class="Logo">
+                <h1>F</h1>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="logo-header">
+                <h1>Faqih Auliyaur R</h1>
+            </div>
+            <div id="dropdown"><i class="fa fa-bars"></i></div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#"><span class="dot"></span>About Me</a></li>
+                    <li><a href="#"><span class="dot"></span>Project</a></li>
+                    <li><a href="#"><span class="dot"></span>Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        document.onreadystatechange = function(){
+            if(document.readyState!== 'complete'){
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector("#loader").style.visibility = "visible";
+            }
+            else{
+                document.querySelector("#loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+</html>

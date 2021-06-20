@@ -1,0 +1,18 @@
+@media(max-width: 1000px){
+    .nav-list li{
+        display: none;
+    }
+
+    #dropdown{
+        display: block;
+        float: right;
+        padding: 15px 25px;
+        font-size: 20px;
+        animation-name: header-fade;
+        animation-duration: 2s;
+    }
+}
+
+@media(max-width: 670px){
+    
+}
