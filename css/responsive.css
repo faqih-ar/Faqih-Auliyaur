@@ -54,11 +54,31 @@
     .text-content p{
         font-size: 15px;
     }
+
+    .skill-content h2{
+        font-size: 15px;
+        float: none;
+    }
+    
+    .skill-content{
+        display: block;
+    }
+
+    .meter{
+        height: 20px;
+        float: none;
+    }
+
+    .meter span{
+        top: 2px;
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 670px){
     .row{
         display: block;
+        padding: 10px 10px;
     }
 
     .image-content{
@@ -81,5 +101,9 @@
     .line{
         width: 30px;
         padding: 0px 0px;
+    }
+
+    .skill-content h2{
+        text-align: center;
     }
 }
