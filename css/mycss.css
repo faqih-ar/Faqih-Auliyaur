@@ -279,14 +279,14 @@ a{
     margin: 0px 0px 100px 0px;
 }
 
-.title{
+.about-me-title{
     padding: 10px 30px;
     display: flex;
     flex-wrap: flex;
     justify-content: center;
 }
 
-.title h1{
+.about-me-title h1{
     color: white;
     font-size: 35px;
     letter-spacing: 2px;
@@ -352,69 +352,4 @@ a{
 .txt-imp:hover{
     text-shadow: 0 0 10px rgb(69, 255, 239);
     transition: all .5s;
-}
-
-/*Skill*/
-
-.content{
-    width: 100%;
-    padding: 50px 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill-content{
-    width: 100%;
-    padding: 0px 100px;
-}
-
-.skill-content{
-    display: inline-block;   
-}
-
-.skill-content h2{
-    float: left;
-    margin: 0px;
-    color: white;
-    letter-spacing: 2px;
-    font-size: 19px;
-    padding: 10px 0px;
-}
-
-.meter{
-    float: right;
-    width: 90%;
-    height: 25px;
-    background: rgba(156, 156, 156, 0.7);
-    border-radius: 10px;
-    position: relative;
-    padding: 5px;
-    margin: 10px 0px;
-}
-
-.meter span{
-    display: block;
-    height: 80%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-color: rgb(255, 43, 43);
-    box-shadow: 1px 1px 10px rgb(248, 105, 105);
-    position: absolute;
-    overflow: hidden;
-    top: 3px;
-    text-align: center;
-    font-size: 16px;
-    color: white;
-    font-weight: bold;
-}
-
-.meter:hover{
-    height: 27px;
-    transition: all .5s;
-}
-
-.meter span:hover{
-    height: 82%;
 }
