@@ -59,6 +59,7 @@
 @media(max-width: 670px){
     .row{
         display: block;
+        padding: 10px 10px;
     }
 
     .image-content{
