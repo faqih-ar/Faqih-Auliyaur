@@ -252,12 +252,12 @@ a{
 
 .btn{
     padding: 10px 40px;
-    border: 1px solid rgb(44, 197, 224);
+    border: 1px solid rgb(4, 255, 234);
     border-radius: 10px;
 }
 
 .btn-more{
-    color: rgb(44, 197, 224);
+    color: rgb(4, 255, 234);
     font-size: 16px;
     letter-spacing: 2px;
 }
@@ -277,6 +277,8 @@ a{
 .wrapper{
     width: 100%;
     margin: 0px 0px 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about-me-title{
@@ -352,4 +354,62 @@ a{
 .txt-imp:hover{
     text-shadow: 0 0 10px rgb(69, 255, 239);
     transition: all .5s;
+}
+
+/*Project*/
+
+.container-project{
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.row-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 20px;
+    grid-column: 20px;
+    padding: 10px;
+}
+
+.card-box-project{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(2, 7, 27) ;
+    box-shadow: 0 0 10px rgb(69, 255, 239);
+    border-radius: 20px;
+}
+
+.img-card{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-txt{
+    color: white;
+    padding: 0px 5px;
+}
+
+.card-txt h2{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-txt p{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.button-link{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button-link a{
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
 }

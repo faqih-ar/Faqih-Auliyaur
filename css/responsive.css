@@ -54,6 +54,19 @@
     .text-content p{
         font-size: 15px;
     }
+
+    .row-content{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 20px;
+        grid-column: 20px;
+        padding: 10px;
+    }
+    
+    .button-link a{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media(max-width: 670px){
@@ -82,5 +95,13 @@
     .line{
         width: 30px;
         padding: 0px 0px;
+    }
+
+    .row-content{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+        grid-column: 20px;
+        padding: 10px;
     }
 }
