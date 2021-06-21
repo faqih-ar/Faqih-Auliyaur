@@ -405,11 +405,27 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .button-link a{
     margin: 10px 0px;
     width: 100%;
     text-align: center;
+}
+
+.row-txt{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    grid-column: 20px;
+    padding: 10px;
+}
+
+.row-txt h2{
+    border-bottom: 1px solid white;
+}
+
+.row-txt p{
+    text-align: justify;
 }
