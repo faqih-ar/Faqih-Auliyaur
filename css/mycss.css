@@ -129,7 +129,7 @@ a{
     left: 0;
     height: 55px;
     z-index: 10;
-    background-color: rgba(9, 15, 39, 0.7) ;
+    background-color: rgba(9, 15, 39, 0.9) ;
     border-bottom: 1px solid rgb(69, 255, 239);
     box-shadow: 0 0 5px rgb(69, 255, 239);
     position: fixed;
