@@ -436,6 +436,8 @@ a{
 
 .row-txt p{
     text-align: justify;
+    max-height: 130px;
+    height: 130px;
 }
 
 /*Side Bar*/
