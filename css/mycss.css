@@ -127,6 +127,12 @@ a{
     width: 100%;
     top: 0;
     left: 0;
+    height: 55px;
+    z-index: 10;
+    background-color: rgba(9, 15, 39, 0.7) ;
+    border-bottom: 1px solid rgb(69, 255, 239);
+    box-shadow: 0 0 5px rgb(69, 255, 239);
+    position: fixed;
 }
 
 .container{
@@ -136,6 +142,7 @@ a{
 .logo-header{
     float: left;
     animation: header-fade 2s;
+    cursor: pointer;
 }
 
 .logo-header h1{
@@ -192,13 +199,14 @@ a{
 
 @keyframes glow{
     0% {text-shadow: 0 0 0px rgb(69, 255, 239);};
-    100% {text-shadow: 0 0 10px rgb(69, 255, 239);};
+    100% {text-shadow: 0 0 20px rgb(69, 255, 239);};
 }
 
 /*top-wrapper*/
 
 .top-wrapper{
     width: 100%;
+    margin: 40px 0px;
 }
 
 .container-top{
@@ -276,7 +284,7 @@ a{
 
 .wrapper{
     width: 100%;
-    margin: 0px 0px 100px 0px;
+    margin: 0px 0px 60px 0px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -428,4 +436,10 @@ a{
 
 .row-txt p{
     text-align: justify;
+}
+
+/*Side Bar*/
+
+#sidebar{
+    display: none;
 }

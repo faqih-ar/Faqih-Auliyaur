@@ -26,7 +26,7 @@
     <!--Header-->
     <header class="header-wrapper" id="header">
         <div class="container">
-            <div class="logo-header">
+            <div class="logo-header" onclick="window.location.href='#me'">
                 <h1>Faqih Auliyaur R</h1>
             </div>
             <div id="dropdown"><i class="fa fa-bars"></i></div>
@@ -39,6 +39,20 @@
             </div>
         </div>
     </header>
+    <!--Side bar-->
+    <div class="side-bar-wrapper" id="side-bar">
+        <div class="container-side">
+            <div id="close-side"><i class="fa fa-times"></i></div>
+            <div class="menu-side">
+                <ul>
+                    <li><a href="#about-me"><span class="dot"></span>About Me</a></li>
+                    <li><a href="#project"><span class="dot"></span>Project</a></li>
+                    <li><a href="#"><span class="dot"></span>Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!--Top-Wrapper-->
     <div class="top-wrapper" id="me">
         <div class="container-top">
@@ -49,7 +63,7 @@
                     terlebih pada frontend dan backend Web Development.
                 </p>
                 <div class="button-more">
-                    <a class="btn btn-more" href="#">Learn More About Me..</a>
+                    <a class="btn btn-more" href="#about-me">Learn More About Me..</a>
                 </div>
             </div>
         </div>
@@ -176,15 +190,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        //FadeOut Loader
         setTimeout(function(){
-            $("#loader").remove();
+            $("#loader").fadeOut();
         }, 4000);
-    </script>
-    <script>
+
+        //Header Hide when loader
         $("#header").hide();
         setTimeout(function(){
             $("#header").show();
         }, 4000);
+
+        //tombol sidebar
+        $("#side-bar").hide();
+        $(document).ready(function(){
+            $("#dropdown").click(function(){
+                $("#side-bar").show();
+                $("#dropdown").hide();
+            });
+            $("#close-side").click(function(){
+                $("#side-bar").fadeOut();
+                $("#dropdown").show();
+            });
+        });
+
+        //show body setelah loader
         $("#me").hide();
         setTimeout(function(){
             $("#me").show();

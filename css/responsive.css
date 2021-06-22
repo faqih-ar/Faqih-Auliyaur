@@ -10,6 +10,7 @@
         font-size: 20px;
         animation-name: header-fade;
         animation-duration: 2s;
+        cursor: pointer;
     }
 
     .content-box{
@@ -66,6 +67,54 @@
     .button-link a{
         width: 100%;
         text-align: center;
+    }
+    
+    .side-bar-wrapper{
+        z-index: 100;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        width: 70%;
+        background-color: rgba(2, 7, 27, 0.9);
+        border-left: 1px solid rgb(69, 255, 239);
+        box-shadow: 1px 1px 10px rgb(69, 255, 239);
+        border-radius: 10px;
+        animation-name: side-bar;
+        animation-duration: 1s;
+        animation-delay: 0s;
+    }
+    
+    .container-side{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    
+    .menu-side{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .menu-side a{
+        text-decoration: none;
+        color: white;
+        letter-spacing: 2px;
+        line-height: 70px;  
+    }
+    
+    #close-side{
+        float:right;
+        font-size: 20px;
+        padding: 10px 25px; 
+        cursor: pointer;
+    }
+    
+    @keyframes side-bar{
+        0% {opacity: 0; transform: translateX(10%); -webkit-transform: translateX(10%);};
+        100% {opacity: 1; transform: translateX(0%); -webkit-transform: translateX(0%);};
     }
 }
 
