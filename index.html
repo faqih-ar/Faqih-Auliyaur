@@ -187,6 +187,30 @@
         </div>
     </div>
 
+    <div class="wrapper-kontak">
+        <div class="container-kontak">
+            <div class="about-me-title">
+                <h1>
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    Contact Me
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </h1>
+            </div>
+            <div class="content-kontak">
+                <ul>
+                    <li><div class="fa fa-envelope-o" id="showemail"></div></li>
+                    <li><a href="https://wa.me/62895605599349" target="_blank" class="fa fa-whatsapp"></a></li>
+                    <li><a href="https://github.com/faqih-ar" target="_blank" class="fa fa-github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/faqih-auliyaur-rohman-4b6b111b6" target="_blank" class="fa fa-linkedin-square"></a></li>
+                    <li><a href="https://www.instagram.com/faqihauliyaur/" target="_blank" class="fa fa-instagram"></a></li>
+                </ul>
+                <h2 id="email">faqih.ar07.98@gmail.com</h2>
+            </div>
+        </div>
+    </div>
+
     <!--Footer-->
     <footer class="footer-wrapper" id="footer">
         <div class="container-footer">
@@ -196,6 +220,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+
         //FadeOut Loader
         setTimeout(function(){
             $("#loader").fadeOut();
@@ -220,6 +245,21 @@
             });
         });
 
+        $("#email").hide();
+        var clickcount = 0;
+        $(document).ready(function(){
+            $("#showemail").click(function(){
+                if (clickcount %2 === 0) {
+                    $("#email").fadeOut();
+                    ++clickcount;
+                }
+                else{
+                    $("#email").fadeIn();
+                    ++clickcount;
+                }
+            })
+        })
+
         //show body setelah loader
         $("#me").hide();
         setTimeout(function(){
@@ -237,6 +277,8 @@
         setTimeout(function(){
             $("#footer").show();
         }, 4000);
+
+        //Copy Email
     </script>
 </body>
 </html>

@@ -176,7 +176,7 @@
         grid-template-columns: auto;
         grid-row-gap: 20px;
         grid-column: 20px;
-        padding: 10px;
+        padding: 10px 20px;
     }
     .word{
         font-size: 12px;
@@ -189,6 +189,14 @@
 
     .container-project{
         width: 100%;
-        padding: 20px 5px;
+        padding: 20px 15px;
+    }
+
+    .content-kontak ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        padding: 10px;
     }
 }

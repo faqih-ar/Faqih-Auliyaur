@@ -498,3 +498,63 @@ a{
             -moz-box-shadow:    -5px 10px 12px 0px rgba(43, 206, 235, 0.77);
             box-shadow:         -5px 10px 12px 0px rgba(43, 206, 235, 0.77);}
 }
+
+
+/*kontak*/
+
+.wrapper-kontak{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-kontak{
+    width: 90%;
+}
+
+.content-kontak{
+    width: 100%;
+    background-color: rgb(2, 7, 27);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
+    margin-bottom: 100px;
+}
+
+.content-kontak ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0px;
+    margin: 20px 0px 0px 0px;
+}
+
+.content-kontak h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+.content-kontak li{
+    font-size: 40px;
+    color: white;
+}
+
+.content-kontak a{
+    color: white;
+}
+
+.content-kontak button{
+    cursor: pointer;
+    background-color: none;
+}
+
+.content-kontak li:hover{
+    font-size: 43px;
+    transition: all .5s;
+}
