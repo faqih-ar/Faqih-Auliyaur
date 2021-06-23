@@ -6,6 +6,7 @@ body{
     background-color: rgb(9, 15, 39);
     color: rgb(4, 255, 234);
     font-family: 'Oswald', sans-serif;
+    margin: 0px;
 }
 
 li{
@@ -65,7 +66,7 @@ a{
     border: 5px solid rgb(9, 15, 39);
     border-radius: 50%;
     border-top: 5px solid yellow;
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid rgb(0, 128, 0);
     animation-name: rotate;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -131,7 +132,7 @@ a{
     z-index: 10;
     background-color: rgba(9, 15, 39, 0.9) ;
     border-bottom: 1px solid rgb(69, 255, 239);
-    box-shadow: 0 0 5px rgb(69, 255, 239);
+    box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
     position: fixed;
 }
 
@@ -185,7 +186,7 @@ a{
     border-radius: 50%;
     display: inline-block;
     margin: 0px 5px;
-    box-shadow: 0 0 5px rgb(69, 255, 239);
+    box-shadow: 1px 1px 15px 1px rgb(43, 206, 235);
 }
 
 #dropdown{
@@ -199,7 +200,7 @@ a{
 
 @keyframes glow{
     0% {text-shadow: 0 0 0px rgb(69, 255, 239);};
-    100% {text-shadow: 0 0 20px rgb(69, 255, 239);};
+    100% {text-shadow: 1 1 20px rgb(69, 255, 239);};
 }
 
 /*top-wrapper*/
@@ -337,7 +338,7 @@ a{
     width: 250px;
     border-radius: 10px;
     margin: 0px auto;
-    box-shadow: 0 0 10px rgb(69, 255, 239);
+    box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
 }
 
 .image-content:hover{
@@ -383,13 +384,18 @@ a{
     margin: 20px;
     padding: 10px;
     background-color: rgb(2, 7, 27) ;
-    box-shadow: 0 0 10px rgb(69, 255, 239);
+    box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
     border-radius: 20px;
+    animation-name: glow-box;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
 }
 
 .img-card{
     width: 100%;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
 }
 
 .card-txt{
@@ -444,4 +450,51 @@ a{
 
 #sidebar{
     display: none;
+}
+
+/*Footer*/
+
+.footer-wrapper{
+    width: 100%;
+    position: relative;
+}
+
+.container-footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgb(2, 7, 27);
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(4, 255, 234);
+    box-shadow: 1px 1px 10px 1px rgb(43, 206, 235);
+}
+
+.container-footer h3{
+    margin:0;
+    padding: 5px 10px;
+}
+
+.word{
+    letter-spacing: 2px;
+    animation-name: glow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes glow-box{
+    0%     {box-shadow: 0px 2px 10px 1px rgb(43, 206, 235);}
+    100%   {-webkit-box-shadow: 7px -10px 12px 0px rgba(43, 206, 235, 0.77);
+            -moz-box-shadow:    7px -10px 12px 0px rgba(43, 206, 235, 0.77);
+            box-shadow:         7px -10px 12px 0px rgba(43, 206, 235, 0.77);
+            -webkit-box-shadow: -5px 10px 12px 0px rgba(43, 206, 235, 0.77);
+            -moz-box-shadow:    -5px 10px 12px 0px rgba(43, 206, 235, 0.77);
+            box-shadow:         -5px 10px 12px 0px rgba(43, 206, 235, 0.77);}
 }
