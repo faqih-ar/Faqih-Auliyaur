@@ -34,7 +34,7 @@
                 <ul>
                     <li><a href="#about-me"><span class="dot"></span>About Me</a></li>
                     <li><a href="#project"><span class="dot"></span>Project</a></li>
-                    <li><a href="#"><span class="dot"></span>Contact Me</a></li>
+                    <li><a href="#contact-me"><span class="dot"></span>Contact Me</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +47,7 @@
                 <ul>
                     <li><a href="#about-me"><span class="dot"></span>About Me</a></li>
                     <li><a href="#project"><span class="dot"></span>Project</a></li>
-                    <li><a href="#"><span class="dot"></span>Contact Me</a></li>
+                    <li><a href="#contact-me"><span class="dot"></span>Contact Me</a></li>
                 </ul>
             </div>
         </div>
@@ -187,7 +187,7 @@
         </div>
     </div>
 
-    <div class="wrapper-kontak">
+    <div class="wrapper-kontak" id="contact-me">
         <div class="container-kontak">
             <div class="about-me-title">
                 <h1>
@@ -272,6 +272,10 @@
         $("#project").hide();
         setTimeout(function(){
             $("#project").show();
+        }, 4000);
+        $("#contact-me").hide();
+        setTimeout(function(){
+            $("#contact-me").show();
         }, 4000);
         $('#footer').hide();
         setTimeout(function(){
